@@ -6,7 +6,7 @@ import Tematik from "../../../public/images/logo_kkn.png";
 
 function Logo() {
   return (
-    <Container className="bg-light border rounded-4 p-5 text-center">
+    <Container className="bg-primary bg-opacity-25 bg-gradient rounded-4 p-5 text-center shadow-lg">
       <div className="d-flex flex-column align-items-center flex-lg-row align-items-lg-center justify-content-lg-center gap-lg-5">
         <Image
           src={University}

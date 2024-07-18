@@ -12,7 +12,7 @@ import Backcover from "../../../../public/images/buku/backcover.jpg";
 function Banjir() {
   return (
     <Container className="my-5">
-      <h1 className="fw-bold text-center mt-5">Banjir</h1>
+      <h1 className="fw-bold text-white text-center mt-5">Banjir</h1>
       <Carousel
         data-bs-theme="dark"
         interval={null}

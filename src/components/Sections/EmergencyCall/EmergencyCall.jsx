@@ -78,14 +78,19 @@ function EmergencyCall() {
 
   return (
     <Container className="my-5">
-      <h1 className="fw-bold text-center my-5">Emergency Call</h1>
+      <h1 className="text-white fw-bold text-center my-5">Emergency Call</h1>
       <div className="d-flex flex-wrap justify-content-center gap-3">
         {numbers.map((number) => (
-          <Card className="col-lg-4 bg-light" key={number.id}>
+          <Card
+            className="col-12 col-lg-4 bg-secondary rounded-4"
+            key={number.id}
+          >
             <Card.Body className="d-flex flex-column align-items-center">
               <Card.Title>{number.nama}</Card.Title>
-              <Card.Text className="fs-1 fw-bold">{number.nomor}</Card.Text>
-              <Card.Text className="text-center text-secondary">
+              <Card.Text className="fs-1 fw-bold text-danger">
+                {number.nomor}
+              </Card.Text>
+              <Card.Text className="text-center text-white">
                 {number.deskripsi}
               </Card.Text>
               <a href={`tel://${number.nomor}`}>

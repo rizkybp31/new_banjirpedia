@@ -3,9 +3,12 @@ import SocialMedia from "../../SocialMedia/SocialMedia";
 
 function About() {
   return (
-    <Container className="my-5">
-      <h1 className="fw-bold text-center my-5">Tentang Website BanjirPedia</h1>
-      <p className="fs-6 text-dark text-center mx-auto my-5 col-lg-9">
+    <Container className="my-5 vh-75 d-flex flex-column justify-content-center">
+      <h1 className="text-white fw-bold text-center my-5">
+        Tentang <span className="text-primary">Banjir</span>
+        <span className="text-danger">Pedia</span>
+      </h1>
+      <p className="fs-6 text-white text-center mx-auto my-5 col-lg-9">
         Banjirpedia adalah portal informasi yang didedikasikan untuk memberikan
         edukasi dan informasi penting terkait banjir kepada warga Kelurahan
         Cabean, Semarang Barat, Semarang. Kami bertujuan untuk meningkatkan

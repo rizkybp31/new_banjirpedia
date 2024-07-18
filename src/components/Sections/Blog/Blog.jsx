@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import NotFound from "../../NotFound/NotFound";
+import Spinner from "react-bootstrap/Spinner";
 
 function BlogList() {
   const [data, setData] = useState(null);
@@ -36,9 +37,13 @@ function BlogList() {
 
   if (isPending) {
     return (
-      <div className="text-center my-5 py-5 d-flex justify-content-center align-items-center gap-2">
-        <div className="spinner-border" role="status" aria-hidden="true"></div>
-        <span aria-label="Loading">Loading...</span>
+      <div className="text-center my-5 py-5 d-flex justify-content-center align-items-center gap-2 vh-100">
+        <Spinner
+          animation="border"
+          role="status"
+          className="text-white"
+        ></Spinner>
+        <span className="fs-5 text-white">Loading...</span>
       </div>
     );
   }
@@ -50,10 +55,10 @@ function BlogList() {
 
   return (
     <Container className="my-5">
-      <h1 className="fw-bold text-center my-5">News</h1>
+      <h1 className="text-white fw-bold text-center my-5">Berita Terbaru</h1>
       <div className="d-flex gap-lg-5 flex-wrap justify-content-center">
         {data.map((item) => (
-          <Card className="my-3 col-lg-3 p-3 bg-light" key={item.id}>
+          <Card className="my-3 col-lg-3 p-3 bg-light rounded-4" key={item.id}>
             <Card.Img
               variant="top"
               src={item.gambar}
@@ -64,7 +69,7 @@ function BlogList() {
               <Card.Title>{item.judul}</Card.Title>
               <Card.Text>{item.teks.slice(0, 200)}...</Card.Text>
               <Link to={`/blogdetail/${item.id}`}>
-                <Button variant="dark">Baca Selengkapnya</Button>
+                <Button variant="primary">Baca Selengkapnya</Button>
               </Link>
             </Card.Body>
           </Card>

@@ -18,7 +18,7 @@ import About from "./components/Sections/About/About";
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className="bg-dark px-2 px-lg-0 min-vh-100">
         <NavigationBar />
         <Switch>
           <Route exact path="/">

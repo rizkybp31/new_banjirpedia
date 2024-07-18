@@ -1,6 +1,8 @@
 import { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import { Container, Form, Button, Spinner } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
+import LaporImage from "../../../../public/images/lapor.png";
 
 export default function LaporWithForm() {
   const [isPending, setIsPending] = useState(false);
@@ -80,12 +82,13 @@ export default function LaporWithForm() {
   };
 
   return (
-    <Container className="mt-5 pt-5 pb-3">
-      <div className="form-container">
+    <Container className="my-5 pt-5 pb-3 bg-white rounded-5 shadow-lg d-flex flex-column align-items-center flex-lg-row">
+      <Image src={LaporImage} className="w-50 mb-3"></Image>
+      <div className="form-container col-lg-5">
         <h2 className="text-center fs-1 fw-bold">Lapor</h2>
         <Form
           ref={form}
-          className="col-lg-5 mx-auto my-5 border p-4 rounded bg-light"
+          className="mx-auto my-5 border p-4 rounded-4 bg-primary bg-opacity-50 bg-gradient shadow-lg"
           onSubmit={handleSubmit}
         >
           <Form.Group className="mb-3">
@@ -145,7 +148,7 @@ export default function LaporWithForm() {
               Loading...
             </Button>
           ) : (
-            <Button type="submit" variant="dark">
+            <Button type="submit" variant="primary">
               Kirim Pesan
             </Button>
           )}

@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 export default function SocialMedia() {
   return (
-    <Container className="py-4 mb-lg-5">
+    <Container className="py-4 mb-lg-5 bg-white rounded-4 shadow-lg">
       <Row className="d-flex justify-content-center col-lg-6 gap-4 gap-lg-0 mx-auto">
         <Col
           lg={4}
