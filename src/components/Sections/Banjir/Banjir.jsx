@@ -39,9 +39,6 @@ function Banjir() {
         <Carousel.Item>
           <img className="d-block w-100" src={Halaman6} alt="Second slide" />
         </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={Backcover} alt="Second slide" />
-        </Carousel.Item>
       </Carousel>
     </Container>
   );
