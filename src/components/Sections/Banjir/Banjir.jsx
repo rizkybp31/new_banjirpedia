@@ -7,7 +7,7 @@ import Halaman3 from "../../../../public/images/buku/halaman3.jpg";
 import Halaman4 from "../../../../public/images/buku/halaman4.jpg";
 import Halaman5 from "../../../../public/images/buku/halaman5.jpg";
 import Halaman6 from "../../../../public/images/buku/halaman6.jpg";
-import Backcover from "../../../../public/images/buku/backcover.jpg";
+// import Backcover from "../../../../public/images/buku/backcover.jpg";
 
 function Banjir() {
   return (
@@ -35,9 +35,6 @@ function Banjir() {
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={Halaman5} alt="Second slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={Halaman6} alt="Second slide" />
         </Carousel.Item>
       </Carousel>
     </Container>
